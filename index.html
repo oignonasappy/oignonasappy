@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>よこうそ</title>
+  <title>よおこそ</title>
   <style>
     body {
       margin: 0;
@@ -19,20 +19,24 @@
       color: #F00;
       text-align: center;
       font-weight: bold;
+      text-decoration: none;
+    }
+    #yokouso:hover {
+      filter: invert(100%);
     }
   </style>
 </head>
 <body>
   <div class="wrap">
-    <div id="yokouso">よこうそ</div>
+    <a id="yokouso" href="./nav.html">よこうそ</a>
   </div>
   <script>
-    let i = 1;
+    let t = 1;
     setInterval(() => {
-      document.getElementById('yokouso').style.fontSize = `${i * 0.05}em`;
-      document.getElementById('yokouso').style.color= `hsl(${i * 50}, 100%, 50%)`;
-      document.getElementById('yokouso').style.transform = `rotate(${i * 100}deg)`;
-      i *= 1.005
+      document.getElementById('yokouso').style.fontSize = `${t * 0.05}em`;
+      document.getElementById('yokouso').style.color= `hsl(${t * 50}, 100%, 50%)`;
+      document.getElementById('yokouso').style.transform = `rotate(${t * 100}deg)`;
+      t *= 1.005
     }, 20);
   </script>
 </body>
