@@ -41,6 +41,17 @@
     .link:active {
       transform: scale(150%) rotateY(180deg);
     }
+
+    .flex {
+      display: flex;
+      justify-content: center;
+      gap: 2em;
+    }
+
+    .flex > * {
+      margin-left: 0;
+      margin-right: 0;
+    }
   </style>
 </head>
 
@@ -58,9 +69,14 @@
     <a class="link" href="https://oignonasappy.github.io/taproot" target="_blank" rel="noopener noreferrer">
       oignonasappy.github.io/taproot
     </a>
-    <a class="link" href="https://bsky.app/profile/did:plc:fxfy76ybhl47pqyjvx2tgdfr" target="_blank" rel="noopener noreferrer">
-      <img src="https://web-cdn.bsky.app/static/favicon.png" alt="bsky" height="32">
-    </a>
+    <div class="flex">
+      <a class="link" href="https://bsky.app/profile/did:plc:fxfy76ybhl47pqyjvx2tgdfr" target="_blank" rel="noopener noreferrer">
+        <img src="https://web-cdn.bsky.app/static/favicon.png" alt="bsky" height="32">
+      </a>
+      <a class="link" href="https://github.com/oignonasappy" target="_blank" rel="noopener noreferrer">
+        <img src="https://github.githubassets.com/favicons/favicon.png" alt="github" height="32">
+      </a>
+    </div>
   </section>
 </body>
 
